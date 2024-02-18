@@ -5,27 +5,38 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: "React Commerce",
-    img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    download: false,
+    title: "Hotelina",
+    url: "https://steven019.pythonanywhere.com/",
+    img: "projects/hotel.png",
+    desc: "A platform where individuals and hotel owners can list their rooms for bookings. Individuals can create an account and book rooms listed on the platform, they could also become sellers themselves by registering for a seller account. Individuals could have multiple seller profiles, the platform also provides anlytics to know how well a seller is performing, it also contains a blog site to let users and visitors know the latest updates on the platform and many other core features.",
   },
   {
     id: 2,
-    title: "Next.js Blog",
-    img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    download: false,
+    title: "Video Chat-app",
+    url: "https://zoom-clone-wb4u.onrender.com",
+    img: "projects/zoom.png",
+    desc: "A re-implementation of zoom, where people can make safe video calls that are end-to-end encrypted. Ever suspected that your calls aren't 100% private? this platform takes those worries away by providing a safe and secure video call connection using zego-cloud SDK. It's also visually appealing and user friendly",
+  
   },
   {
     id: 3,
-    title: "Vanilla JS App",
-    img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    download: true,
+    title: "Movie App",
+    url: "projects/movieupdates.apks",
+    img: "projects/movieapp.png",
+    desc: "A database of every movie ever created get to know more about your favorite movies and their cast. This platform uses the TMDB database to provide information on a wide variety of movies, you could get to know all the latest and trending movies on here, search for info on specific movies, save/make a list of your favorite movies or movies you would like to watch, etc. The app is currently not published on playstore or the apple store but you can download it using the link below.",
+    
   },
   {
     id: 4,
-    title: "Music App",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    download: false,
+    title: "Weather App",
+    url: "https://weatherapp-ud3j.onrender.com/",
+    img: "projects/weatherapp.png",
+    desc: "A visually appealing weather app with current and up-to-date weather information for your daily activity scheduling. This web-app uses Rapidapi to get data of countries and cities then uses the openweathermap api to get the current weather information of the cities and the weather forecast for the next 1 week.",
+  
   },
 ];
 
@@ -48,7 +59,7 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{y}}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+            <a href={item.url} download={item.download}>{item.download? "Download":'See Demo'}</a>
           </motion.div>
         </div>
       </div>
