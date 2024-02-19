@@ -24,7 +24,7 @@ const items = [
     id: 3,
     download: true,
     title: "Movie App",
-    url: "projects/movieupdates.apks",
+    url: "projects/movieupdates.apk",
     img: "projects/movieapp.png",
     desc: "A database of every movie ever created get to know more about your favorite movies and their cast. This platform uses the TMDB database to provide information on a wide variety of movies, you could get to know all the latest and trending movies on here, search for info on specific movies, save/make a list of your favorite movies or movies you would like to watch, etc. The app is currently not published on playstore or the apple store but you can download it using the link below.",
     
