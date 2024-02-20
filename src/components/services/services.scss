@@ -19,7 +19,7 @@
       flex-direction: column;
       position: relative;
       right: 2em;
-      display: none;
+      // display: none;
     }
 
     p {
@@ -47,7 +47,7 @@
 
     @include mobile {
       width: 100%;
-      display: none;
+      // display: none;
     }
 
     .title {
@@ -144,7 +144,7 @@
 
     .others{
       @include mobile{
-        display: none;
+        // display: none;
       }
     }
   }
