@@ -7,7 +7,7 @@ const items = [
     id: 1,
     download: false,
     title: "Hotelina",
-    url: "https://steven019.pythonanywhere.com/",
+    url: "https://steve019.pythonanywhere.com",
     img: "projects/hotel.png",
     desc: "A platform where individuals and hotel owners can list their rooms for bookings. Individuals can create an account and book rooms listed on the platform, they could also become sellers themselves by registering for a seller account. Individuals could have multiple seller profiles, the platform also provides anlytics to know how well a seller is performing, it also contains a blog site to let users and visitors know the latest updates on the platform and many other core features.",
   },
